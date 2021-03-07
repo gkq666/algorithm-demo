@@ -1,6 +1,7 @@
 package cn.gkq.queue;
 
 import java.util.Collection;
+import java.util.PriorityQueue;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 
@@ -14,6 +15,9 @@ public class QueueTest {
 
     public static void main(String[] args) throws InterruptedException {
         ArrayBlockingQueue<Integer> queue = new ArrayBlockingQueue(3);
+
+        PriorityQueue priorityQueue = new PriorityQueue();
+
         queue.add(1);
         queue.add(2);
         queue.add(3);
